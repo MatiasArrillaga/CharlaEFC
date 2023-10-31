@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="FluentValidation" Version="10.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Algoritmo.CharlaEFC.Domain\Algoritmo.CharlaEFC.Domain.csproj" />
+    <ProjectReference Include="..\Algoritmo.CharlaEFC.Infrastructure\Algoritmo.CharlaEFC.Infrastructure.csproj" />
+    <ProjectReference Include="..\Algoritmo.CharlaEFC.Portable\Algoritmo.CharlaEFC.Portable.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Algoritmo.Microservices.Shared.Application">
+      <HintPath>..\..\..\Binaries\Algoritmo.Microservices.Shared.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="Algoritmo.Microservices.Shared.Domain">
+      <HintPath>..\..\..\Binaries\Algoritmo.Microservices.Shared.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="Algoritmo.Microservices.Shared.Infrastructure">
+      <HintPath>..\..\..\Binaries\Algoritmo.Microservices.Shared.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Algoritmo.Microservices.Shared.Portable">
+      <HintPath>..\..\..\Binaries\Algoritmo.Microservices.Shared.Portable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
